@@ -1,0 +1,194 @@
+.music-container
+{
+   width: 350px;
+   display: block;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.music-img
+{
+   height: 380px;
+   background-size: cover;
+   background-position: center;
+   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('img/album-cover.jpg');
+   color:#fff;
+}
+
+.music-header
+{
+border-bottom:1px solid #555;
+height: 50px;
+}
+.music-header .fa-angle-left
+{
+   float: left;
+   margin-top:15px;
+   margin-left: 10px;
+   cursor: pointer; 
+}
+
+.music-header .fa-list-ul
+{
+   float:right;
+   margin-top: 15px;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.music-header .title
+{
+ width: 250px;
+ height: 30px;
+ position: absolute;
+ margin-left: 30px;
+ margin-top: 10px;
+ text-align: center;
+ padding-left: 10px; 
+}
+
+.inner-img
+{
+   padding-top: 60px;
+}
+
+.inner-img img
+{
+width:175px;
+height: 175px;
+border-radius: 50%;
+animation: rotate 15s linear infinite;
+margin-bottom: 30px;
+}
+
+@keyframes rotate
+{
+   100%{transform: rotate(360deg);}
+}
+
+marquee
+{
+   font-size: 12px;
+   margin-top: -10px;
+}
+
+.music-control
+{
+   background-image: linear-gradient(#ff0000,#222);
+}
+
+.music-bar .progress
+{
+   height: 5px !important;
+   border-radius: 0 !important;
+   background-color: #000;
+} 
+
+.music-bar .progress-bar
+{
+   width: 50%;
+   background-color: #fff;
+   animation: width 10s infinite;
+}
+
+@keyframes width
+{
+ 100%{width:100%;}
+}
+
+.social-bar
+{
+   border-bottom: 1px solid #ff2424;
+   height: 50px;
+}
+
+
+.social-bar .fa
+{
+   padding: 15px 26px;
+   color: #999;
+   font-size: 15px;
+   cursor: pointer;
+}
+
+.control-bar
+{
+height: 100px;
+padding-top:15px;
+width: 100%
+}
+
+.control-bar .fa
+{
+ display: inline-block;
+ margin: 0 5px;
+ cursor: pointer; 
+}
+
+.control-bar .fa-play
+{
+   width: 60px;
+   height: 60px;
+   padding-top: 14px;
+   color: #fff;
+   background-color: #de1a1a;
+   border-radius:50%;
+   font-size:30px;
+}
+
+.control-bar .fa-step-backward,.control-bar .fa-step-forward{
+   width: 40px;
+   height: 40px;
+   padding-top: 12px;
+   color: #ccc;
+   background-color: #ff3636;
+   border-radius:50%;
+   font-size:15px;
+}
+
+.user-menu
+{
+   height: 60px;
+   font-family: sans-serif;
+   background: #000;
+   line-height: 25px;
+}
+
+.user-menu ul
+{
+display: inline-block;
+padding: 12px 0;
+list-style-type: none;
+}
+
+.user-menu ul li
+{
+display: inline-block;
+padding: 0px 25px;
+color: #999;
+}
+
+.user-menu ul li a
+{
+   color: #007bff;
+   font-size: 10px;
+   text-decoration: none;
+}
+
+.user-menu .fa
+{
+color: #999;
+font-size: 22px;
+}
+
+.active .fa
+{
+color: #fff;
+}
+
+.active a p
+{
+   color: #fff;
+}
